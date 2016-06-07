@@ -26,4 +26,4 @@ sed -e 's/<%.*%>//; /name/d' ${FULLSTACK_DIR}/templates/app/_package.json > pack
 sed -e 's/<%.*%>//; /name/d' "${FULLSTACK_DIR}/templates/app/typings(ts).json" > typings.json
 
 sed  -i .bak "s/LABEL.*/LABEL \"version\"=\"${ver}\"/" Dockerfile
-sed  -i  .bak "s/\"version\".*/\"version\": \"${ver}\"/" package.json
+sed  -i  .bak "s/\"version\".*/\"version\": \"${ver}\",/" package.json
