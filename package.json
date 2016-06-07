@@ -1,5 +1,5 @@
 {
-  "version": "3.7.5"
+  "version": "3.7.5",
   "main": "server/app.js",
   "dependencies": {
     "express": "^4.13.3",
