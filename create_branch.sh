@@ -3,7 +3,7 @@
 #find the generator-angular-fullstack source
 #this is usually 2 direcories up as this is a submodule
 #but use your own if you want to
-FULLSTACK_DIR=${DEFAULT_FULLSTACK_DIR:='../..'}
+FULLSTACK_DIR=${DEFAULT_FULLSTACK_DIR:='..'}
 
 echo "Using ${FULLSTACK_DIR} to create branch"
 
