@@ -1,4 +1,7 @@
-#!/usr/bin/env bash -x
+#!/usr/bin/env bash 
+
+MY_PATH="`dirname \"$0\"`"
+cd ${MY_PATH}
 
 #find the generator-angular-fullstack source
 #this is usually 2 direcories up as this is a submodule
@@ -27,3 +30,8 @@ sed -e 's/<%.*%>//; /name/d' "${FULLSTACK_DIR}/templates/app/typings(ts).json" >
 
 sed  -i .bak "s/LABEL.*/LABEL \"version\"=\"${ver}\"/" Dockerfile
 sed  -i  .bak "s/\"version\".*/\"version\": \"${ver}\",/" package.json
+
+git add .
+git commit -m "circleci push to ${ver}"
+git push origin ${ver}
+
