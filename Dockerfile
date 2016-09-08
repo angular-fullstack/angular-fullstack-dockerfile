@@ -2,7 +2,7 @@ FROM node:4.2.4
 
 MAINTAINER Jeremymarshall
 
-LABEL "version"="3.7.5"
+LABEL "version"="4.0.4"
 
 RUN npm cache clean -f; npm install -g npm; npm install -g yo
 
