@@ -1,4 +1,4 @@
-FROM node:4.2.4
+FROM node:slim
 
 MAINTAINER Jeremymarshall
 
