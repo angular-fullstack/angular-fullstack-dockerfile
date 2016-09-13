@@ -5,6 +5,7 @@ MAINTAINER Jeremymarshall
 LABEL "version"="4.0.4"
 
 #RUN npm cache clean -f; npm install -g npm; npm install -g yo lodash
+RUN npm install -g node-gyp
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
