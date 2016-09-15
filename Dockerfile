@@ -4,8 +4,7 @@ MAINTAINER Jeremymarshall
 
 LABEL "version"="4.0.4"
 
-#RUN apk add --no-cache make gcc g++ python && npm install -g node-gyp
-RUN apk add --no-cache python && npm install -g node-gyp
+RUN apk add --no-cache make gcc g++ python && npm install -g node-gyp
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
