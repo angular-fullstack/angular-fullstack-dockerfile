@@ -1,6 +1,5 @@
 FROM mhart/alpine-node
 
-
 MAINTAINER Jeremymarshall
 
 LABEL "version"="4.0.4"
