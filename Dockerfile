@@ -2,7 +2,7 @@ FROM node:slim
 
 MAINTAINER Jeremymarshall
 
-LABEL "version"="4.0.4"
+LABEL "version"="4.1.1"
 
 RUN npm cache clean -f; npm install -g npm; npm install -g yo
 
