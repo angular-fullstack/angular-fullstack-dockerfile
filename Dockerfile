@@ -1,24 +1,22 @@
-FROM node:latest
+# angular-fullstack-dockerfile
 
-MAINTAINER Jeremymarshall
+This is the Docker image for the node.js yeoman generator angular-fullstack.
 
-LABEL "version"="4.1.1"
+As the generator requires node and several npm modules this image bakes in the dependencies to reduce the time taken to deploy applications.
 
-RUN npm  install -g node-gyp
+## branches available 
+```
+docker pull generatorangularfullstack/angular-fullstack-dist:latest
+```
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+- latest
+- 2.0.8
+- 3.3.0
+- 3.7.4
+- 3.7.5
+- 4.0.4
+- 4.1.1
+- alpine.4.0.4
+- alpine.4.1.1
 
-ENV NODE_PATH=/usr/local/lib/node_modules/:/usr/local/lib  NODE_ENV=production
-
-COPY *.json /usr/src/app/
-RUN npm install 
-
-ONBUILD COPY package.json /usr/src/app/
-ONBUILD RUN npm install 
-ONBUILD COPY . /usr/src/app
-
-CMD [ "npm", "start" ]
-
-EXPOSE 8080
-
+Alpine branches aren't that much smaller as some modules need python and a build chain to build. 
