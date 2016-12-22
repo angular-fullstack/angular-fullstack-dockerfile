@@ -1,18 +1,18 @@
 {
-  "version": "4.0.4",
+  "version": "4.1.1",
   "main": "server/index.js",
   "dependencies": {
     
-    "angular": "~1.5.5",
+    "angular": "~1.6.0",
     "bootstrap-sass": "~3.3.7",
     "bootstrap": "~3.3.7",
     "bootstrap-social": "^5.0.0",
-    "angular-animate": "~1.5.5",
-    "angular-aria": "~1.5.5",
-    "angular-resource": "~1.5.5",
-    "angular-cookies": "~1.5.5",
-    "angular-sanitize": "~1.5.5",
-    "angular-route": "~1.5.5",
+    "angular-animate": "~1.6.0",
+    "angular-aria": "~1.6.0",
+    "angular-resource": "~1.6.0",
+    "angular-cookies": "~1.6.0",
+    "angular-sanitize": "~1.6.0",
+    "angular-route": "~1.6.0",
     "angular-ui-bootstrap": "^2.0.1",
     "font-awesome": ">=4.1.0",
     "angular-socket-io": "~0.7.0",
@@ -34,7 +34,7 @@
     "babel-runtime": "^6.6.1",
     "babel-polyfill": "^6.7.2",
     "pug": "2.0.0-beta4",
-    "ejs": "^2.3.3",
+    "ejs": "^2.5.3",
     "mongoose": "^4.1.2",
     "bluebird": "^3.3.3",
     "connect-mongo": "^1.2.1",
@@ -42,7 +42,7 @@
     "sqlite3": "~3.1.1",
     "express-sequelize-session": "0.4.0",
     "jsonwebtoken": "^7.0.0",
-    "express-jwt": "^3.0.0",
+    "express-jwt": "^5.0.0",
     "passport": "~0.3.0",
     "passport-local": "^1.0.0",
     "passport-facebook": "^2.0.0",
@@ -57,7 +57,7 @@
   },
   "devDependencies": {
     
-    "angular-mocks": "~1.5.5",
+    "angular-mocks": "~1.6.0",
     
     "bootstrap-styl": "^5.0.5",
     "font-awesome-stylus": "^4.6.2",

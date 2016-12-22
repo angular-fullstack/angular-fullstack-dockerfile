@@ -2,7 +2,7 @@ FROM mhart/alpine-node
 
 MAINTAINER Jeremymarshall
 
-LABEL "version"="4.0.4"
+LABEL "version"="alpine.4.1.1"
 
 RUN apk add --no-cache make gcc g++ python && npm install -g node-gyp
 
