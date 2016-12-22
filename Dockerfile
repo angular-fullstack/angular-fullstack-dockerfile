@@ -1,10 +1,10 @@
-FROM node:slim
+FROM node:latest
 
 MAINTAINER Jeremymarshall
 
 LABEL "version"="4.1.1"
 
-RUN npm cache clean -f; npm install -g npm; npm install -g yo
+RUN npm  install -g node-gyp
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
