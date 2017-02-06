@@ -1,8 +1,8 @@
-FROM node:latest
+FROM mhart/alpine-node
 
 MAINTAINER Jeremymarshall
 
-LABEL "version"="4.1.2"
+LABEL "version"="alpine.4.1.2"
 
 RUN npm  install -g node-gyp
 
