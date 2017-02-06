@@ -4,7 +4,7 @@ MAINTAINER Jeremymarshall
 
 LABEL "version"="alpine.4.1.2"
 
-RUN npm  install -g node-gyp
+RUN apk add --no-cache make gcc g++ python && npm install -g node-gyp
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
