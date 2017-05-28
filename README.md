@@ -17,8 +17,10 @@ docker pull generatorangularfullstack/angular-fullstack-dist:latest
 - 4.0.4
 - 4.1.1
 - 4.1.2
+- 4.2.2
 - alpine.4.0.4
 - alpine.4.1.1
 - alpine.4.1.2
+- alpine.4.2.2
 
 Alpine branches aren't that much smaller as some modules need python and a build chain to build. 
