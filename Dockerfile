@@ -2,7 +2,7 @@ FROM node:latest
 
 MAINTAINER Jeremymarshall
 
-LABEL "version"="4.1.2"
+LABEL "version"="4.2.2"
 
 RUN npm  install -g node-gyp
 
